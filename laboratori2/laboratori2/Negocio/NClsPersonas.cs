@@ -11,13 +11,13 @@ namespace laboratori2.Negocio
 {
     class NClsPersonas : RClsPersona
     {
-        public void SaveAdults(persona perso)
+        public void SaveAdults(persona person)
         {
 
-            if (perso.edadPersona >= 18)
+            if (person.edadPersona >= 18)
 
             {
-                guardar(perso);
+                guardar(person);
             }
             else
                 MessageBox.Show("No es mayor de edad");
