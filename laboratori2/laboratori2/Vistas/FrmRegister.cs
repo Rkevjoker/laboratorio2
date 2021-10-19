@@ -22,9 +22,9 @@ namespace laboratori2.Vistas
         private void save_Click(object sender, EventArgs e)
         {
             persona person = new persona();
-            person.nombrePersona = name.Text;
-            person.edadPersona = int.Parse(age.Text);
-            person.descripcionPersona = description.Text;
+            person.nombrePersona = textBox1.Text;
+            person.edadPersona = int.Parse(textBox2.Text);
+            person.descripcionPersona = textBox3.Text;
 
             NClsPersonas clsPersona = new NClsPersonas();
             clsPersona.SaveAdults(person);
