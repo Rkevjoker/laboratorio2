@@ -21,13 +21,13 @@ namespace laboratori2.Vistas
 
         private void save_Click(object sender, EventArgs e)
         {
-            persona per = new persona();
-            per.nombrePersona = name.Text;
-            per.edadPersona = int.Parse(age.Text);
-            per.descripcionPersona = description.Text;
+            persona person = new persona();
+            person.nombrePersona = name.Text;
+            person.edadPersona = int.Parse(age.Text);
+            person.descripcionPersona = description.Text;
 
             NClsPersonas clsPersona = new NClsPersonas();
-            clsPersona.SaveAdults(per);
+            clsPersona.SaveAdults(person);
         }
 
         private void register_Click(object sender, EventArgs e)
